@@ -1,14 +1,30 @@
-这是 CUC Life Hack 的浏览器 Userscript 外挂的模板项目。
+# 智慧树 Hack
 
-你可以直接以此项目为模板创建新项目，或者将此项目克隆到本地以快速开始新的外挂开发。
+## 安装
 
-本模板项目采用 [webpack](https://github.com/webpack/webpack) 配合 [webpack-userscript](
-	https://github.com/momocow/webpack-userscript
-) 插件来支持模块化的开发风格。
+发布路径：https://github.com/CUC-Life-Hack/zhihuishu-hack/blob/master/dist/main.user.js
 
-克隆完毕后，请到 `userscript.config.js` 中调整 userscript 配置。
+安装方法：请参阅 [TamperMonkey 使用说明](https://github.com/CUC-Life-Hack/.github/wiki/Tampermonkey-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)。
 
-```shell
-make development	# 启动调试服务器
-make production		# 发布打包
-```
+> 注：不知为何，只支持 Chrome。在 Firefox 上运行会无法劫持事件验证接口，导致自动化操作无法进行。
+
+# 功能
+
+安装后，进入智慧树课程界面，会看到如图悬浮窗：
+
+<center>
+	<img
+		src="./docs/screenshot.png"
+		height="300"
+	/>
+</center>
+
+支持两个手动操作：
+
+- [x] 切换到最低画质
+- [x] 使用最高倍速（16x）
+
+以及自动化操作，开启之后会自动播放视频、以及播放完毕后切换到下一个未完成的课时，
+中途遇到弹题也会自动关闭。
+
+> 注意：刷课过程中可能会弹出验证码，需要手动处理。

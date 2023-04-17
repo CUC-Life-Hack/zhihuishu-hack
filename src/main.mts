@@ -184,7 +184,7 @@ class Hack extends HackBase {
 			this.endAutoBtn = this.panel.Button('停止自动', () => this.EndAuto());
 			this.endAutoBtn.disabled = true;
 
-			this.panel.NewLine();
+			this.panel.Header('手动操作');
 
 			this.panel.Button('低画质', () => this.ChooseLowRes());
 			this.panel.Button('最高倍速', () => this.ChooseHighPlaybackRate());
